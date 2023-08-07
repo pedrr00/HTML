@@ -1,0 +1,32 @@
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#formulario label{
+    text-align: right;
+    flex-basis: 30%;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="password"],
+#formulario input[type="number"],
+#formulario select,
+#formulario textarea{
+    flex: 1;
+}
+
+#formulario .radio-group,
+#formulario .checkbox-group {
+    display: flex;
+    gap: 10px;
+}
+
+#formulario input [type="submit"]{
+    margin-top: 10px;
+}
