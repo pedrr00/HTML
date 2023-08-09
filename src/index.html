@@ -7,44 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <form id="formulario">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required> <br>
+    <header>
+        header
+    </header>
 
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu email" required> <br>
+    <main>
+        <form id="formulario">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required> <br>
 
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha" placeholder="digite sua senha" required> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required> <br>
 
-        <label for="idade">Idade:</label>
-        <input type="number" name="idade" id="idade" min= "0" max="150" placeholder="digite sua idade" required> <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="digite sua senha" required> <br>
 
-        <label>Gênero:</label>
-        <input type="radio" name="genero" id="generoM" value="masculino">
-        <label for="generoM">Masculino</label>
-        <input type="radio" name="genero" id="generoF" value="feminino">
-        <label for="generoF">Feminino</label> <br>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" min= "0" max="150" placeholder="digite sua idade" required> <br>
 
-        <label >Interesse:</label>
-        <input type="checkbox" name="esportes" id="esportes" value="esportes" >
-        <label for="esportes">Esportes</label>
-        <input type="checkbox" name="tecnologia" id="tecnologia" value="tecnologia">
-        <label for="tecnologia">Tecnologia</label> <br>
+            <label>Gênero:</label>
+            <input type="radio" name="genero" id="generoM" value="masculino">
+            <label for="generoM">Masculino</label>
+            <input type="radio" name="genero" id="generoF" value="feminino">
+            <label for="generoF">Feminino</label> <br>
 
-        <label >Pais:</label>
-        <select name="pais" id="pais">
-            <option value="brasil">Brasil</option>
-            <option value="portugal">Portugal</option>
-            <option value="argentina">Argentina</option>
-        </select> <br>
+            <label >Interesse:</label>
+            <input type="checkbox" name="esportes" id="esportes" value="esportes" >
+            <label for="esportes">Esportes</label>
+            <input type="checkbox" name="tecnologia" id="tecnologia" value="tecnologia">
+            <label for="tecnologia">Tecnologia</label> <br>
 
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+            <label >Pais:</label>
+            <select name="pais" id="pais">
+                <option value="brasil">Brasil</option>
+                <option value="portugal">Portugal</option>
+                <option value="argentina">Argentina</option>
+            </select> <br>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>            
 
-        <input type="submit" value="enviar" id="enviar" (click)="test($event)">
+            <input type="submit" value="enviar" id="enviar" (click)="test($event)">
 
-    </form>
+        </form>
+    </main>
+    <footer>
+        footer
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
