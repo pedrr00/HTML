@@ -1,59 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <header>
         header
     </header>
 
-    <main>
-        <form id="formulario">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required> <br>
 
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="Digite seu email" required> <br>
+    <form id="formulario">
+        <div class="form-group col-6">
+            <label for="formGroupExampleInput">Nome:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite o seu nome" required>
+            <br>
 
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" placeholder="digite sua senha" required> <br>
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                placeholder="Digite o seu email" required> <br>
+
+            <label for="exampleInputPassword1">Senha</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Coloque a sua senha"
+                required> <br>
 
             <label for="idade">Idade:</label>
-            <input type="number" name="idade" id="idade" min= "0" max="150" placeholder="digite sua idade" required> <br>
+            <input type="number" name="idade" class="form-control" id="idade" min="0" max="150"
+                placeholder="digite sua idade" required> <br>
+            <div class="form-check-inline">
+                <label>Gênero:</label> <br>
+                <input class="form-check-input" type="radio" name="genero" id="generoM" value="masculino">
+                <label class="form-check-label" for="generoM">Masculino</label>
+                <input class="form-check-input" type="radio" name="genero" id="generoF" value="feminino">
+                <label class="form-check-label" for="generoF">Feminino</label> <br>
 
-            <label>Gênero:</label>
-            <input type="radio" name="genero" id="generoM" value="masculino">
-            <label for="generoM">Masculino</label>
-            <input type="radio" name="genero" id="generoF" value="feminino">
-            <label for="generoF">Feminino</label> <br>
+                <label>Interesse:</label> <br>
+                <input class="form-check-input" type="checkbox" name="esportes" id="esportes" value="esportes">
+                <label class="form-check-label" for="esportes">Esportes</label>
+                <input class="form-check-input" type="checkbox" name="tecnologia" id="tecnologia" value="tecnologia">
+                <label class="form-check-label" for="tecnologia">Tecnologia</label> <br>
+            </div>
+            <div class="selectors">
+                <label for="exampleFormControlSelect1">Pais:</label>
+                <select name="pais" id="pais" class="form-control">
+                    <option value="null"></option>
+                    <option value="brasil">Brasil</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="argentina">Argentina</option>
+                </select> <br>
 
-            <label >Interesse:</label>
-            <input type="checkbox" name="esportes" id="esportes" value="esportes" >
-            <label for="esportes">Esportes</label>
-            <input type="checkbox" name="tecnologia" id="tecnologia" value="tecnologia">
-            <label for="tecnologia">Tecnologia</label> <br>
+                <label for="exampleFormControlTextarea1">Mensagem:</label><br>
+                <textarea name="mensagem" id="exampleFormControlTextarea1" rows="3"></textarea> <br>
+            </div>
 
-            <label >Pais:</label>
-            <select name="pais" id="pais">
-                <option value="brasil">Brasil</option>
-                <option value="portugal">Portugal</option>
-                <option value="argentina">Argentina</option>
-            </select> <br>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>            
+            <button type="submit" value="enviar" id="enviar" class="btn btn-primary">Enviar</button>
+        </div>
+    </form>
 
-            <input type="submit" value="enviar" id="enviar" (click)="test($event)">
 
-        </form>
-    </main>
     <footer>
         footer
     </footer>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>

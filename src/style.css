@@ -1,64 +1,7 @@
-#formulario{
+.form-group {
     display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(252, 252, 252);
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#formulario label{
-    text-align: right;
-    flex-basis: 30%;
-}
-
-#formulario input[type="text"],
-#formulario input[type="email"],
-#formulario input[type="password"],
-#formulario input[type="number"],
-#formulario select,
-#formulario textarea{
-    flex: 1;
-}
-
-#formulario .radio-group,
-#formulario .checkbox-group {
-    display: flex;
-    gap: 10px;
-}
-
-#formulario input [type="submit"]{
-    margin-top: 10px;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
-header{
-   
-    background-color: red;
-    padding: 1rem;
-}
-
-main{
-    
-    background-color: yellow;
-    padding: 2rem;
-}
-
-footer{
-    
-    background-color: green;
-    padding: 1rem;
-}
-
+    }

@@ -19,3 +19,5 @@ Saiba como criar layouts responsivos e organizar conteúdo em linhas e colunas.
 Explore o framework Bootstrap e como ele facilita o desenvolvimento responsivo.
 Aprenda a usar as classes do Bootstrap para criar grids, elementos de formulário, navegação e outros componentes.
 Compreenda o sistema de grades responsivas do Bootstrap e como ele se integra ao Flexbox e ao Grid.
+
+
